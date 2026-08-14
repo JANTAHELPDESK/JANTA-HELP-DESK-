@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JANTA HELP DESK - Free Online Tools</title>
+<meta name="description" content="JANTA HELP DESK - Free online image, PDF and document tools.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">JANTA <span>HELP DESK</span></div>
+  <nav>
+    <a href="#tools">Tools</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="assets/banner.png" alt="Janta Help Desk banner">
+  </section>
+
+  <section class="intro">
+    <h1>Free Online CSC Tools</h1>
+    <p>फोटो, सिग्नेचर और PDF के जरूरी काम मोबाइल से आसानी से करें।</p>
+  </section>
+
+  <section id="tools" class="tools">
+    <article class="card">
+      <div class="icon">🖼️</div><h2>Image Resize</h2>
+      <p>फोटो को मनचाहे width और height में resize करें।</p>
+      <button onclick="openTool('resize')">Open Tool</button>
+    </article>
+    <article class="card">
+      <div class="icon">✍️</div><h2>Signature Resize</h2>
+      <p>Signature को resize और download करें।</p>
+      <button onclick="openTool('signature')">Open Tool</button>
+    </article>
+    <article class="card">
+      <div class="icon">📦</div><h2>Image Compress</h2>
+      <p>JPG/PNG image की file size कम करें।</p>
+      <button onclick="openTool('compress')">Open Tool</button>
+    </article>
+    <article class="card">
+      <div class="icon">📄</div><h2>JPG to PDF</h2>
+      <p>एक या कई images से PDF बनाएं।</p>
+      <button onclick="openTool('pdf')">Open Tool</button>
+    </article>
+  </section>
+
+  <section id="toolPanel" class="panel hidden">
+    <div class="panel-head"><h2 id="toolTitle">Tool</h2><button class="close" onclick="closeTool()">×</button></div>
+    <div id="toolBody"></div>
+  </section>
+
+  <section id="about" class="info">
+    <h2>JANTA HELP DESK</h2>
+    <p>यह वेबसाइट सामान्य document और image कामों के लिए free browser-based tools उपलब्ध कराती है। Files आपके browser में process होती हैं; server पर upload नहीं की जातीं।</p>
+  </section>
+  <section id="contact" class="info">
+    <h2>Contact</h2>
+    <p>अपना email या WhatsApp नंबर यहाँ बाद में जोड़ सकते हैं।</p>
+  </section>
+</main>
+
+<footer>© 2026 JANTA HELP DESK • Free Tools</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
